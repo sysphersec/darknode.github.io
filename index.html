@@ -58,6 +58,7 @@ document.addEventListener('DOMContentLoaded', function() {
 				encrypt(message.value).then(function(encrypted_msg) {
 					form.elements['message'].value = encrypted_msg;
 					form.submit();
+				        alert('Mensaje enviado!');
 				});
 				return true;
 			}
